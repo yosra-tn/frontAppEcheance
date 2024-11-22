@@ -1,0 +1,75 @@
+.dashboard-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+    text-align: center; 
+    color: #2e2e2e; 
+    margin-bottom: 30px;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.add-button {
+    padding: 10px 20px;
+    background-color: #4dd0e1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #26c6da;
+}
+
+.section-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+}
+
+.deadline-list {
+    list-style: none;
+    padding: 0;
+}
+
+.deadline-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.deadline-item:last-child {
+    border-bottom: none;
+}
+
+.due-date {
+    font-weight: bold; 
+}
+
+.overdue {
+    background-color: #ffccbc; 
+}
+
+.no-overdue {
+    text-align: center; 
+    color: #9e9e9e; 
+}

@@ -1,0 +1,61 @@
+.profile-container {
+    max-width: 400px; /* Width of the profile container */
+    margin: 50px auto; /* Centering the container */
+    padding: 20px;
+    background-color: #fff; /* White background for the profile */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.profile-title {
+    text-align: center; /* Center the title */
+    font-size: 24px; /* Title size */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark text color */
+}
+
+.profile-info {
+    margin-bottom: 30px; /* Space below the info section */
+}
+
+.profile-item {
+    display: flex; /* Aligns label and data side by side */
+    justify-content: space-between; /* Space between label and data */
+    padding: 10px 0; /* Space above and below the item */
+}
+
+.profile-label {
+    font-weight: bold; /* Bold text for labels */
+    color: #555; /* Lighter dark color */
+}
+
+.profile-data {
+    color: #777; /* Gray color for data */
+}
+
+.profile-actions {
+    display: flex; /* Align buttons in a row */
+    justify-content: space-between; /* Space between buttons */
+}
+
+.profile-button {
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.profile-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.logout {
+    background-color: #f44336; /* Red background for logout */
+}
+
+.logout:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}

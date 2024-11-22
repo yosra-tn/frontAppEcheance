@@ -1,0 +1,54 @@
+/* Auth.css */
+
+/* Styles de base pour les pages de connexion et d'inscription */
+.auth-container {
+    max-width: 400px; /* Largeur maximale */
+    margin: 50px auto; /* Centrage vertical et horizontal */
+    padding: 20px; /* Espacement intérieur */
+    background: linear-gradient(to bottom right, #e0f7fa, #f9f9f9); /* Dégradé pastel */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.auth-title {
+    text-align: center; /* Centrage du titre */
+    color: #2e2e2e; /* Couleur du texte */
+    margin-bottom: 20px; /* Espacement en bas */
+}
+
+.auth-form {
+    display: flex; /* Flexbox pour les éléments du formulaire */
+    flex-direction: column; /* Colonne */
+}
+
+label {
+    margin-bottom: 5px; /* Espacement en bas des labels */
+    color: #4a4a4a; /* Couleur des labels */
+}
+
+input {
+    padding: 10px; /* Espacement intérieur */
+    margin-bottom: 20px; /* Espacement en bas */
+    border: 1px solid #b0bec5; /* Bordure gris clair */
+    border-radius: 5px; /* Coins arrondis pour les champs */
+    transition: border-color 0.3s; /* Transition pour les changements de couleur */
+}
+
+input:focus {
+    border-color: #80deea; /* Bordure en bleu clair au focus */
+    outline: none; /* Retirer le contour par défaut */
+}
+
+.auth-button {
+    padding: 10px; /* Espacement intérieur du bouton */
+    background-color: #4dd0e1; /* Couleur pastel pour le bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis pour le bouton */
+    cursor: pointer; /* Curseur pointeur au survol */
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+}
+
+.auth-button:hover {
+    background-color: #26c6da; /* Couleur du bouton au survol */
+}
