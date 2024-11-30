@@ -14,7 +14,7 @@ function Login() {
         e.preventDefault();
         setErrorMessage('');
         try {
-            const response = await axios.post("http://127.0.0.1:8015/login", {
+            const response = await axios.post("http://127.0.0.1:8000/login", {
                 username: userName,
                 password,
             });
@@ -37,10 +37,10 @@ function Login() {
             <h2 className="auth-title">Connexion</h2>
             <form method='POST' onSubmit={handleSubmit} className="auth-form">
                 <label htmlFor="username">Nom d'utilisateur</label>
-                <input type="text" id="username" value={userName} onChange={(e) => setUserName(e.target.value)} required />
+                <input placeholder="Nom d'utilisateur" type="text" id="username" value={userName} onChange={(e) => setUserName(e.target.value)} required />
 
                 <label htmlFor="password">Mot de passe</label>
-                <input type="password" id="password"  value={password} onChange={(e) => setPassword(e.target.value)} required />
+                <input placeholder="Mot de passe" type="password" id="password"  value={password} onChange={(e) => setPassword(e.target.value)} required />
 
                 <button type="submit" className="auth-button">Se connecter</button>
                 {errorMessage && <p className="error">{errorMessage}</p>}

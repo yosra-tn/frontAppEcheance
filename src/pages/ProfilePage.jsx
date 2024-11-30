@@ -16,7 +16,7 @@ function ProfilePage() {
         
         const fetchUserData = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:8015/get_user/', {
+                const response = await axios.get('http://127.0.0.1:8000/get_user/', {
                     params: { user_id: userId },
                 });
                 setUserData(response.data);
@@ -33,7 +33,8 @@ function ProfilePage() {
     };
 
     const handleLogout = () => {
-        alert('Déconnexion');
+        localStorage.removeItem('userId');
+        navigate('/login');
     };
 
     return (

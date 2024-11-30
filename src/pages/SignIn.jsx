@@ -16,7 +16,7 @@ function SignUp() {
         setError("");
 
         try {
-            const response = await axios.post("http://127.0.0.1:8015/register", {
+            const response = await axios.post("http://127.0.0.1:8000/register", {
                 username,
                 email,
                 password,
@@ -33,13 +33,13 @@ function SignUp() {
             <h2 className="auth-title">Inscription</h2>
             <form method='POST' onSubmit={handleRegister} className="auth-form">
                 <label htmlFor="username">Nom d'utilisateur</label>
-                <input type="text" id="username" alue={username} onChange={(e) => setUsername(e.target.value)} required />
+                <input placeholder="Nom d'utilisateur" type="text" id="username" alue={username} onChange={(e) => setUsername(e.target.value)} required />
 
                 <label htmlFor="email">Email</label>
-                <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}  required />
+                <input placeholder="Email" type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}  required />
 
                 <label htmlFor="password">Mot de passe</label>
-                <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)}  required />
+                <input placeholder="Mot de passe" type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)}  required />
 
                 <button type="submit" className="auth-button">S'inscrire</button>
                 {error && <p style={{ color: 'red' }}>{error}</p>}

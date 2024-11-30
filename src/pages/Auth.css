@@ -4,16 +4,21 @@
 .auth-container {
     max-width: 400px; /* Largeur maximale */
     margin: 50px auto; /* Centrage vertical et horizontal */
-    padding: 20px; /* Espacement intérieur */
-    background: linear-gradient(to bottom right, #e0f7fa, #f9f9f9); /* Dégradé pastel */
-    border-radius: 10px; /* Coins arrondis */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    padding: 30px; /* Espacement intérieur */
+    background: linear-gradient(to bottom right, #ffffff, #e3f2fd); /* Dégradé pastel */
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); /* Ombre douce */
+    font-family: 'Poppins', sans-serif; /* Police de caractères */
 }
 
 .auth-title {
     text-align: center; /* Centrage du titre */
-    color: #2e2e2e; /* Couleur du texte */
-    margin-bottom: 20px; /* Espacement en bas */
+    color: #0d47a1; /* Couleur du texte */
+    font-size: 1.8rem;
+    font-weight: bold; /* Gras */
+    margin-bottom: 25px; /* Espacement en bas */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .auth-form {
@@ -22,33 +27,62 @@
 }
 
 label {
-    margin-bottom: 5px; /* Espacement en bas des labels */
-    color: #4a4a4a; /* Couleur des labels */
+    margin-bottom: 8px; /* Espacement en bas des labels */
+    color: #37474f; /* Couleur des labels */
+    font-size: 0.9rem; /* Taille de la police */
+    font-weight: 500; /* Gras */
 }
 
 input {
-    padding: 10px; /* Espacement intérieur */
+    padding: 12px; /* Espacement intérieur */
     margin-bottom: 20px; /* Espacement en bas */
-    border: 1px solid #b0bec5; /* Bordure gris clair */
-    border-radius: 5px; /* Coins arrondis pour les champs */
-    transition: border-color 0.3s; /* Transition pour les changements de couleur */
+    border: 1px solid #cfd8dc; /* Bordure gris clair */
+    border-radius: 8px; /* Coins arrondis pour les champs */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Transition pour les changements de couleur */
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif; /* Police de caractères */
 }
 
 input:focus {
-    border-color: #80deea; /* Bordure en bleu clair au focus */
+    border-color: #42a5f5; /* Bordure en bleu clair au focus */
+    box-shadow: 0 0 0 8px rgba(66, 165, 245, 0.5); /* Ombre bleue claire au focus */
     outline: none; /* Retirer le contour par défaut */
 }
 
 .auth-button {
-    padding: 10px; /* Espacement intérieur du bouton */
-    background-color: #4dd0e1; /* Couleur pastel pour le bouton */
+    padding: 12px; /* Espacement intérieur du bouton */
+    background-color: #1e88e5; /* Couleur pastel pour le bouton */
     color: white; /* Couleur du texte du bouton */
     border: none; /* Pas de bordure */
-    border-radius: 5px; /* Coins arrondis pour le bouton */
+    border-radius: 8px; /* Coins arrondis pour le bouton */
     cursor: pointer; /* Curseur pointeur au survol */
-    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Transition pour le changement de couleur */
 }
 
 .auth-button:hover {
-    background-color: #26c6da; /* Couleur du bouton au survol */
+    background-color: #1565c0; /* Couleur du bouton au survol */
+    transform: translateY(-2px); /* Décalage vers le haut au survol */
+}
+
+.auth-button:active {
+    transform: translateY(0); /* Retour à la position initiale au clic */
+}
+
+.auth-footer {
+    text-align: center; /* Centrage du texte */
+    margin-top: 15px; /* Espacement en haut */
+    font-size: 0.85rem; /* Taille de la police */
+    color: #78909c; /* Couleur du texte */
+}
+.auth-footer a {
+    color: #1e88e5; /* Couleur du lien */
+    text-decoration: none; /* Pas de soulignement */
+    transition: color 0.3s ease; /* Transition pour le changement de couleur */
+}
+.auth-footer a:hover {
+    color: #1565c0; /* Couleur du lien au survol */
 }

@@ -17,7 +17,7 @@ function FormUpdateMdp() {
             return;
         }
         try {
-            const response = await axios.put(`http://127.0.0.1:8015/update_password/?user_id=${userId}`, {
+            const response = await axios.put(`http://127.0.0.1:8000/update_password/?user_id=${userId}`, {
               old_password: oldPassword, 
               new_password: newPassword  
             }
